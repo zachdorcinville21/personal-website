@@ -1,0 +1,83 @@
+.exp-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #707070;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.exp-innerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    text-align: center;
+}
+
+.skills-container {
+    width: 45%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.skill {
+    opacity: 0;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-height: 815px) {
+    #space-svg {
+        width: 230px;
+        height: 230px;
+    }
+
+    #stars-svg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .resume {
+        top: 60px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .skill {
+        width: 170px;
+        height: 80px;
+    }
+
+    .skills {
+        gap: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+    #space-svg, #stars-svg {
+        visibility: hidden;
+    }
+
+    .skills-container {
+        width: 55%;
+    }
+}
+
+

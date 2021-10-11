@@ -1,0 +1,52 @@
+{
+  "name": "z-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "emailjs-com": "^2.6.4",
+    "gsap": "^3.5.1",
+    "react": "^17.0.1",
+    "react-burger-menu": "^3.0.2",
+    "react-dom": "^17.0.1",
+    "react-gsap": "^2.2.1",
+    "react-hamburger-menu": "^1.2.1",
+    "react-items-carousel": "^2.8.0",
+    "react-lazyload": "^3.1.0",
+    "react-multi-carousel": "^2.6.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-scroll": "^1.8.1",
+    "react-scrollmagic": "^2.2.0",
+    "styled-components": "^5.2.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy-production": "react-scripts build && scp -r ./build/* zacharyd@174.138.61.141:/var/www/zacharyd.io/html",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
