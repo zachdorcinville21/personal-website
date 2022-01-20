@@ -41,20 +41,20 @@ const Projects = () => {
                 </div>
                 <div className='project'>
                     <Project
+                        imgLink="https://sticnuru.sirv.com/sol-hub-imgs/Screen%20Shot%202022-01-20%20at%202.11.26%20PM.png"
+                        title="$SOLhub"
+                        description="A personal Solana dashboard where you can message other Phantom wallets and view your NFT collection."
+                        githubLink="https://github.com/zachdorcinville21/sol-hub"
+                        projLink="https://solhub.app"
+                    />
+                </div>
+                <div className='project'>
+                    <Project
                         imgLink="https://sticnuru.sirv.com/Website%20images/sayhey.png"
                         title="sayhey"
                         description="Real time chat application built with React, Node, Express, and Socket.IO"
                         githubLink="https://github.com/zachdorcinville21/sayhey"
                         projLink="https://sayhey.netlify.app"
-                    />
-                </div>
-                <div className='project'>
-                    <Project
-                        imgLink="https://sticnuru.sirv.com/Website%20images/pandemic-intel.png"
-                        title="Pandemic Intel"
-                        description=" View COVID-19 statistics for every state, along with where to get tested. Click to view."
-                        githubLink="https://github.com/zachdorcinville21/covid-intel"
-                        projLink={"https://pandemicintel.live"}
                     />
                 </div>
             </div>
