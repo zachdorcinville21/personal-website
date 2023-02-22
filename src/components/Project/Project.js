@@ -21,19 +21,29 @@ const styles = makeStyles({
 
     root: {
         width: props => props.width,
-        backgroundColor: 'AliceBlue',
+        backgroundColor: '#36454f',
     },
 
     media: {
         height: 280,
     },
 
+    title: {
+        color: '#fff',
+    },
+
     description: {
         fontSize: '12px',
+        color: '#fff',
     },
 
     btnTxt: {
         fontSize: '10px',
+        color: '#fff',
+    },
+
+    cardContent: {
+        textAlign: 'left',
     }
 });
 
@@ -52,8 +62,8 @@ const Project = ({ imgLink, title, description, githubLink, projLink }) => {
                     image={imgLink}
                     title={title}
                 />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
+                <CardContent className={classes.cardContent}>
+                    <Typography className={classes.title} gutterBottom variant="h5" component="h2">
                         {title}
                     </Typography>
                     <Typography className={classes.description} variant="body2" color="textSecondary" component="p">
@@ -64,7 +74,7 @@ const Project = ({ imgLink, title, description, githubLink, projLink }) => {
             <CardActions>
                 <Button className={classes.btnTxt} size="small" color="primary" href={githubLink} target="_blank">
                     View code
-                    </Button>
+                </Button>
             </CardActions>
         </Card>
     );

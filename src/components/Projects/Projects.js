@@ -48,15 +48,6 @@ const Projects = () => {
                         projLink="https://solhub.app"
                     />
                 </div>
-                <div className='project'>
-                    <Project
-                        imgLink="https://sticnuru.sirv.com/Website%20images/sayhey.png"
-                        title="sayhey"
-                        description="Real time chat application built with React, Node, Express, and Socket.IO"
-                        githubLink="https://github.com/zachdorcinville21/sayhey"
-                        projLink="https://sayhey.netlify.app"
-                    />
-                </div>
             </div>
         </div>
     );
