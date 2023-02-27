@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import styled from 'styled-components';
 import downArrow from './images/down-arrow-white.svg';
@@ -20,9 +20,14 @@ const slideProfession = () => {
 }
 
 const Welcome = () => {
+    const [projectsY, setProjectsY] = useState(0);
+
     useEffect(() => {
         gsap.delayedCall(0.5, fadeInTitle);
         gsap.delayedCall(1.5, slideProfession);
+        setProjectsY(
+            document.querySelector('.projects-container').getBoundingClientRect().y
+        );
     }, []);
 
     return (
@@ -32,7 +37,7 @@ const Welcome = () => {
                 <Text id='profession' as="p">Software Engineer | Web Developer</Text>
             </div>
 
-            <div className='see-more' onClick={() => scroll.scrollTo(900)}>
+            <div className='see-more' onClick={() => scroll.scrollTo(projectsY ?? 900)}>
                 <Text as="p">See more</Text>
                 <img src={downArrow} style={{ width: '50px' }} alt='down arrow' />
             </div>

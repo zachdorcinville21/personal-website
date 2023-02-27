@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  background: #254D64;
+  background: #36454f;
   width: 50%;
   height: 100vh;
   text-align: center;
@@ -21,7 +21,6 @@ export const StyledMenu = styled.nav`
   a {
     font-weight: normal;
     font-size: 20px;
-    text-transform: uppercase;
     padding: 2rem 0;
     color: #fffafa;
     text-decoration: none;

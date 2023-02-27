@@ -7,7 +7,7 @@ import teaching1 from './images/teach.jpg';
 import teaching2 from './images/teach2.jpg';
 import mentor1 from './images/mentor.jpg';
 import mentor2 from './images/mentor2.jpg';
-import thinking from './images/thinking.svg';
+import mentor from './images/mentor.svg';
 
 import './Mentor.css';
 
@@ -59,20 +59,20 @@ const Mentor = () => {
     return (
         <div className='mentor-container'>
             <div className='mentor-heading'>
-                <img src={thinking} alt='thinking icon' style={{ width: '60px', height: '60px', }} />
+                <img src={mentor} alt='thinking icon' style={{ width: '100px', height: '100px', }} />
                 <Text as='h1'>I also mentor.</Text>
             </div>
             <div className='carousel'>
                 <Carousel
                     autoPlay
-                    swipeable={true}
+                    ssr
+                    infinite
+                    keyBoardControl
+                    swipeable
+                    showDots
                     draggable={false}
-                    showDots={true}
                     responsive={responsive}
                     slidesToSlide={1}
-                    ssr={true}
-                    infinite={true}
-                    keyBoardControl={true}
                     transitionDuration={500}
                     containerClass="carousel"
                     removeArrowOnDeviceType={["tablet", "mobile"]}

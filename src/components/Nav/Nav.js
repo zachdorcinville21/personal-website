@@ -15,23 +15,17 @@ const NavContainer = styled.nav`
     top: 0;
     display: flex;
     justify-content: space-between;
+    padding: 0 24px;
+    align-items: center;
     z-index: 10;
     transition: background-color 0.4s ease-out;
 `;
 
 const NavItem = styled.div`
-    font-family: Corbert;
     color: #FFFAFA;
-    margin-left: 25px;
 `;
 
 const Logo = styled.div`
-    width: 50px;
-    height: 45px;
-    position: relative;
-    bottom: 23px;
-    left: 20px;
-
     &:hover {
         cursor: pointer;
     }
@@ -40,7 +34,6 @@ const Logo = styled.div`
 const Nav = ({ isHome }) => {
     const [navColor, setColor] = useState('');
     const [open, setOpen] = useState(false);
-
 
     useEffect(() => {
         document.addEventListener('scroll', () => {

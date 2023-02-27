@@ -22,10 +22,15 @@ const Input = styled.input`
     border-radius: 3px;
     border: none;
     margin-bottom: 20px;
-    background-color: #fffafa;
+    background-color: #36454f;
+    color: #fff;
 
     &:focus {
         outline: none;
+    }
+
+    ::placeholder {
+        color: #fff;
     }
 `;
 
@@ -35,7 +40,12 @@ const MsgInput = styled.textarea`
     border-radius: 3px;
     border: none;
     margin-bottom: 20px;
-    background-color: #fffafa;
+    background-color: #36454f;
+    color: #fff;
+    
+    ::placeholder {
+        color: #fff;
+    }
 `;
 
 const SubmitButton = styled.button`
@@ -50,7 +60,7 @@ const SubmitButton = styled.button`
 
     &:hover {
         cursor: pointer;
-        box-shadow: 0px 1px 5px 2px #000000; 
+        box-shadow: 0px 0px 2px 2px #000000; 
     }
 
     &:focus {
@@ -76,13 +86,13 @@ const Contact = () => {
             to_name: 'zdorcinville@gmail.com',
             subject: subject,
             message: message,
-        }
+        };
         emailjs.send(
             'website-email-form',
             'template_y4m89vi',
             templateParams,
             'user_4gGAJTUE5UFmqkyzrNtBd',
-        )
+        );
         resetForm();
         setState({ formSubmitted: true });
     }

@@ -3,20 +3,10 @@
     color: #FFFAFA;
 }
 
-#zd {
-    width: 50px;
-    height: 45px;
-    position: relative;
-    bottom: 32px;
-    left: 50px;
-}
-
 .hyperlinks {
     display: flex;
     flex-direction: row;
-    position: relative;
-    right: 30px;
-    margin-top: -5px;
+    gap: 48px;
 }
 
 .menu-item {
