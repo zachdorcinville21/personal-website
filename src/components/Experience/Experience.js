@@ -70,7 +70,7 @@ const Experience = () => {
             <Nav isHome={false} />
             <div className='exp-innerContainer'>
                 <div className='skills-container'>
-                    <Text id='exp-heading' as='h1'><img src={code} style={{ width: '50px', position: 'relative', top: '15px' }} alt='code icon' /> What I use</Text>
+                    <Text id='exp-heading' as='h1'><img src={code} style={{ width: '50px' }} alt='code icon' /> What I use</Text>
                     <div className='skills'>
                         {skills.map((skill, idx) => (
                             <div className='skill' key={idx}><Skill name={skill.name} icon={skill.icon} /></div>
@@ -80,7 +80,7 @@ const Experience = () => {
                 <div className='resume'>
                     <img src={resume} style={{ width: '80px', height: '80px', }} alt='resume icon' />
                     <a
-                        href="https://sticnuru.sirv.com/Website%20images/Resume%20-%20Zachary%20Dorcinville.pdf"
+                        href="https://sticnuru.sirv.com/Website%20images/Resume-Zachary%20Dorcinville.pdf"
                         target="_blank"
                         rel="noreferrer"
                         id='resume-link'
